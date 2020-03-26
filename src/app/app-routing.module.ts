@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: 'book-list/:idType',
     loadChildren: () => import('./book-list/book-list.module').then( m => m.BookListPageModule)
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
   }
 ];
 
